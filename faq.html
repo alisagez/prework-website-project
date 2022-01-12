@@ -9,24 +9,45 @@
         <header>
             <h1 class="mainH1">Alisa's First Website</h1>
         <nav>
+            <!--turn these into buttons-->
             <a class="navLinks" href="index.html">Home</a>
             <a class="navLinks" href="last30days.html">Alisa's Last 30 Days</a>
             <a class="navLinks" href="next30days.html">Alisa's Next 30 Days</a>
             <a class="navLinks" href="faq.html">FAQ</a>
         </nav>        
+
     </header>
 
-      
         <h1>FAQ</h1>
-        <p>This page provides answers to some of the most commonly asked questions.</p>
-        <h3>Who is Alisa?</h3>
-            <p>It's me! Hello! I like to cook, I can ride a bicycle, and I am currently in the process of learning software development.</p>       
-       
-
-        <h3>Why did Alisa create this website?</h3>
-        <p>I created this website to showcase all the cool things that I have learned about software development so far. You can find some examples of what I have learned in the Showcase of Things section of this website.</p>
-        <h3>Does Alisa plan on creating more websites in the future?</h3>
-        <p>Yes, this is just the beginning and I plan on creating many more websites to showcase even more cool things that I will hopefully be able to do one day.</p>
-        
+        <button class="faqHeader">Who is Alisa?</button>
+            <div class="faqContent">
+                 <p>It's me! Hello! I like to cook, I can ride a bicycle, and I am currently in the process of learning software development.</p>
+            </div>
+        <button class="faqHeader">Why did Alisa create this website?</button>
+            <div class="faqContent">
+                 <p>I created this website to showcase all the cool things that I have learned about software development so far. You can find some examples of what I have learned in the Showcase of Things section of this website.</p>
+            </div>
+        <button class="faqHeader">Who is Alisa?</button>
+            <div class="faqContent">
+                 <p>Yes, this is just the beginning and I plan on creating many more websites to showcase even more cool things that I will hopefully be able to do one day.</p>
+            </div>
+    <!--Script below is for the collapsible section of the FAQs; whenever I moved it to the script.js file, it would no longer work... so need to figure out why-->
+    <script>
+                var coll = document.getElementsByClassName("faqHeader");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                      content.style.maxHeight = null;
+                    } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                  });
+                }
+    </script>
+    
     </body>
 </html>
