@@ -1,4 +1,28 @@
 body {
     background: rgb(140, 175, 214);
   }
-  
+
+nav {
+    text-align: center;
+    display: block;
+    margin-bottom: 100px;
+    background-color: #44a2b8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainH1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navLinks {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-style: solid;
+}
+
+
