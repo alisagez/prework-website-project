@@ -33,7 +33,24 @@
                  <p>Without a doubt. This masterful website is just the beginning and I plan on creating many more websites to demonstrate my mega cool coding capabilities.</p>
             </div>
             </div>
-    <!--Script below is for the collapsible section of the FAQs; whenever I moved it to the script.js file, it would no longer work... so need to figure out why-->
+    <!--Script below is for the collapsible section of the FAQs; whenever I moved it to the script.js file, it would no longer work... so need to figure out why
+       <script>
+                var coll = document.getElementsByClassName("faqHeader");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                      content.style.maxHeight = null;
+                    } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                  });
+                }
+    </script>
+-->
  
     
     </body>
