@@ -5,7 +5,6 @@
         <title>Alisa's First Website: FAQ</title>
     </head>
     <body>
-        <script src="script.js"></script>
         <header>
             <h1 class="mainH1">Alisa's First Website</h1>
         <nav>
@@ -26,32 +25,18 @@
             </div>
         <button class="faqHeader">Why did Alisa create this website?</button>
             <div class="faqContent">
-                 <p>I created this website to showcase all the cool things that I have learned about software development so far. You can find some examples of what I have learned in the Showcase of Things section of this website.</p>
+                 <p>I created this website to showcase all the cool things that I have learned about software development so far. Check out <a href="last30days.html">Alisa's Last 30 Days</a> and <a href="next30days.html">Alisa's Next 30 Days</a> to see what I've been up to and what I have planned next.</p>
             </div>
         <button class="faqHeader">Does Alisa plan on creating more websites in the future?</button>
             <div class="faqContent">
-                 <p>Without a doubt. This masterful website is just the beginning and I plan on creating many more websites to demonstrate my mega cool coding capabilities.</p>
+                 <p>Without a doubt. This masterful website is just the beginning and I plan on creating many more websites to demonstrate the coding capabilities that I will acquire in the future.</p>
             </div>
+        <button class="faqHeader">Does Alisa have any cats?</button>
+            <div class="faqContent">
+                 <p>Yes, several.</p>
             </div>
-    <!--Script below is for the collapsible section of the FAQs; whenever I moved it to the script.js file, it would no longer work... so need to figure out why
-       <script>
-                var coll = document.getElementsByClassName("faqHeader");
-                var i;
-                
-                for (i = 0; i < coll.length; i++) {
-                  coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight){
-                      content.style.maxHeight = null;
-                    } else {
-                      content.style.maxHeight = content.scrollHeight + "px";
-                    } 
-                  });
-                }
-    </script>
--->
+        </div>
  
-    
+<script src="script.js"></script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-//This is the code that does not work when entered to this file and referenced in the HTML file
+
 var coll = document.getElementsByClassName("faqHeader");
 var i;
 
