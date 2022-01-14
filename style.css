@@ -2,7 +2,19 @@ body {
     background: #e6e6e6;
     color: #3d414e;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
   }
+
+a {
+    text-decoration: none;
+    color: #6d8d8b;
+}
+
+
+.mainH1 {
+    text-align: center;
+    margin-top: 30px;
+}
 
 nav {
     text-align: center;
@@ -12,11 +24,6 @@ nav {
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px;
-}
-
-.mainH1 {
-    text-align: center;
-    margin-top: 30px;
 }
 
 .navLinks {
@@ -50,13 +57,19 @@ nav {
     text-align: left;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
   }
   
   .active, .faqHeader:hover {
     background-color: #9ec4c0;
   }
   
+.pageContent {
+    display: block;
+    width: 75%;
+    margin-left: 30px;
+}
+
   .faqContent {
     padding: 0 18px;
     max-height: 0;
@@ -70,3 +83,22 @@ nav {
   #faqSection {
       width: 700px;
   }
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+  .footerBoxes {
+      float: left;
+      text-align: center;
+      width: 33.3%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100px;
+      background: #f2f1f1;
+      
+  }
+
+  
