@@ -7,9 +7,32 @@ body {
 
 a {
     text-decoration: none;
-    color: #6d8d8b;
+    color: #5d8684;
 }
 
+button {
+    background-color: #89B0AE;
+    color: white;
+    padding: 15px 20px;
+    width: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 7px;
+    /* border: 2px solid #5d8684; */
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9ec4c0;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #5d8684;
+}
 
 .mainH1 {
     text-align: center;
@@ -36,6 +59,7 @@ nav {
     border-style: solid;
     border-color: transparent;
     text-decoration: none;
+    color: #3d414e;
 }
 
 .navLinks:hover {
@@ -45,6 +69,12 @@ nav {
 .navLinks:visited {
     text-decoration: none;
     color: #3d414e;
+}
+
+.pageContent {
+    display: block;
+    width: 75%;
+    margin-left: 100px;
 }
 
 .faqHeader {
@@ -64,14 +94,10 @@ nav {
     background-color: #9ec4c0;
   }
   
-.pageContent {
-    display: block;
-    width: 75%;
-    margin-left: 30px;
-}
 
   .faqContent {
     padding: 0 18px;
+    padding-bottom: 10px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -86,6 +112,7 @@ nav {
 
 #footer {
     /* position: fixed; */
+    padding-top: auto;
     bottom: 0px;
     width: 100%;
 }
@@ -101,5 +128,8 @@ nav {
       
   }
 
-
+  .footerLink {
+    text-decoration: none;
+    color: #6d8d8b;
+}
   

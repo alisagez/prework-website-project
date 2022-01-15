@@ -13,3 +13,8 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+const input = document.getElementById('alertExample');
+input.addEventListener('click', function() {
+  alert('Thank you for clicking on the button.');
+});
