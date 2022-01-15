@@ -16,5 +16,5 @@ for (i = 0; i < coll.length; i++) {
 
 const input = document.getElementById('alertExample');
 input.addEventListener('click', function() {
-  alert('Thank you for clicking on the button.');
+  alert('Thank you for clicking on the button. You can now click on the OK button below.');
 });
