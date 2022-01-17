@@ -111,7 +111,7 @@ nav {
   }
 
 #footer {
-    position: fixed;
+    /* position: fixed; */
     padding-top: auto;
     bottom: 0px;
     width: 100%;
